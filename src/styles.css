@@ -5,9 +5,10 @@
   --black: #1c2b2d;
   --light-blue: #005490;
   --light-blue-border: #5cb5f4;
-  --color-sec: #db6400;
+  --color-secondary: #ff4500;
   --grey: #eee;
-  --green: green;
+  --green: #32cd32;
+  --semi-transparent-dark-blue: rgba(1, 54, 95, 0.9);
 }
 
 * {
@@ -42,10 +43,10 @@ body {
   color: var(--white);
   text-align: center;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(1, 54, 95, 0.9);
+  box-shadow: 0 0 5px var(--semi-transparent-dark-blue);
 }
 
-.counter-div > * {
+.counter-div>* {
   margin-bottom: 2rem;
 }
 
@@ -66,7 +67,7 @@ body {
 }
 
 button.subtract {
-  background-color: var(--color-sec);
+  background-color: var(--color-secondary);
 }
 
 button.reset {
